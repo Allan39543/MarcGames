@@ -107,10 +107,40 @@ border-radius: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
     color: #FFFDD0;
     margin-top: 2%;
    
+}
+
+.play-game h3{
+
+    margin-bottom: 1%;
+}
+
+.play-game form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 50%;
+}
+
+.play-game form input[type="text"]{
+
+    height: 60px;
+    width: 40%;
+    background: #FFFDD0;
+    margin-bottom: 4%;
+    border-radius: 5px;
+}
+
+.play-game form input[type="submit"]{
+    height: 60px;
+    width: 35%;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Resposive Styling */
@@ -156,5 +186,25 @@ border-radius: 1em;
         width: 80%;
         margin: auto;
         margin-top: 4%;
+    }
+
+    .play-game form{
+
+        display: inline-block;
+        width: 95%;
+        margin: auto;
+        height: auto;
+       
+    }
+
+    .play-game form input[type="text"]{
+
+        height: 40px;
+        width: 30%;
+        margin-left: 4px;
+    }
+
+    .play-game form input[type="submit"]{
+        margin-left: 33%;
     }
 }
