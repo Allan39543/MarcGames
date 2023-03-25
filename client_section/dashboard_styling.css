@@ -1,0 +1,40 @@
+.container {
+
+    position: relative;
+    background: #001220;
+    border-radius: 5px;
+    height: 70vh;
+    width: 65%;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+
+
+.game-activities .game-nav{
+
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+}
+
+.game-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game-nav a{
+    color: #FFFDD0;
+}
+
+.game-nav .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
