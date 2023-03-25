@@ -4,3 +4,11 @@ id INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY(id)
 )
 
+CREATE TABLE leagues(
+id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255),
+    PRIMARY KEY(id)
+)
+
+
+

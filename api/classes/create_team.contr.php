@@ -4,8 +4,10 @@ class FormProcessor extends Team {
     public function process() {
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Get the name and age values from the form data
-        $name = $_POST['teamName'];
-       
+        
+        if (isset($_POST['teamName'])) {
+            $name = $_POST['teamName'];
+        }
   
         // Do something with the name and age values
         $result = "Hello, $name! ";
