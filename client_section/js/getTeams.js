@@ -3,6 +3,8 @@
    fetch('http://localhost/MarcGames/api/classes/team.view.php')
    .then(response => response.json())
    .then(data => {
+
+    console.log(data);
        // Get a reference to the table body
        const tableBody = document.querySelector('#teamTable tbody');
 

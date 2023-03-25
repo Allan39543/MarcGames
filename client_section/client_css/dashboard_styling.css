@@ -47,9 +47,12 @@
 display: flex;
 flex-direction: column;
 width: 50%;
+height: 200px;
 margin: auto;
 align-items: center;
-
+border: 1px solid #FFFDD0;
+padding: 5px;
+border-radius: 1em;
 }
 
 .create-team label{
@@ -96,6 +99,17 @@ align-items: center;
 
     background: green;
     height: 30px;
+}
+
+.play-game{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+    color: #FFFDD0;
+    margin-top: 2%;
+   
 }
 
 /* Resposive Styling */
