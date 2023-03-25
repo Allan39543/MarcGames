@@ -84,6 +84,21 @@
     }
 }
 
+.create-game-link{
+
+    position: absolute;
+    
+}
+.create-game-link a{
+
+    background: #FBAE3C;
+    padding: .8em;
+    border-radius: 5px;
+    color: #001220;
+    font-weight: bold;
+    font-size: larger;
+}
+
 /* Responsive Design */
 
 @media only screen and (max-width: 768px)  {
@@ -130,23 +145,9 @@
     .create-game-link{
 
         position: absolute;
-        top: 65%;
-        left: 35%;
+        top: 67%;
+        left: 31%;
     }
 
 
-}
-.create-game-link{
-
-    position: absolute;
-    
-}
-.create-game-link a{
-
-    background: #FBAE3C;
-    padding: .8em;
-    border-radius: 5px;
-    color: #001220;
-    font-weight: bold;
-    font-size: larger;
 }
