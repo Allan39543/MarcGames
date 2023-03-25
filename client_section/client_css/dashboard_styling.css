@@ -130,4 +130,15 @@ align-items: center;
         width: 60%;
     }
 
+    .tables{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .game-tables{
+
+        width: 80%;
+        margin: auto;
+        margin-top: 4%;
+    }
 }
