@@ -140,15 +140,11 @@
     .create-game-link{
 
         position: absolute;
-        top: 67%;
+        top: 70%;
         left: 31%;
     }
 
 
 }
 
-@media only screen and (max-width: 318px)  {
-body{
-    display: none;
-}
-}
+
