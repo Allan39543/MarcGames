@@ -36,5 +36,78 @@
     flex-direction: column;
     align-items: center;
 }
+.create-team{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.create-team form{
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: auto;
+align-items: center;
 
+}
 
+.create-team label{
+    font-size: large;
+    color: #FFFDD0;
+    margin-bottom: 2%;
+
+}
+
+.create-team form input[type="text"]{
+
+    height: 50px;
+    width: 40%;
+    background: #FFFDD0;
+    margin-bottom: 4%;
+    border-radius: 5px;
+}
+
+.create-team form input[type="submit"]{
+    height: 50px;
+    width: 35%;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#result{
+
+    color: #FFFDD0;
+}
+
+/* Resposive Styling */
+
+@media only screen and (max-width: 768px)  {
+
+    .container {
+
+        width: 95%;
+        margin-top: 20%;
+        height: 60vh;
+    }
+
+    .game-activities .game-nav{
+
+        width: 95%;
+    }
+
+    .create-team form{
+
+        width: 90%;
+    }
+
+    .create-team form input[type="text"]{
+
+        width: 90%;
+    }
+
+    .create-team form input[type="submit"]{
+
+        width: 60%;
+    }
+
+}
