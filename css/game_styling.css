@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-.main{
+.main {
 
-    background-image: url('../images/bgMobile.jpg');
+    background-image: url('../images/ryan-searle-qjrjJnFypa0-unsplash.jpg');
     height: 100vh;
     width: 100%;
     background-position: center center;
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
 }
 
-.main img{
+.main .spinning-image img{
 
     
         animation: spin 2s infinite linear;
@@ -32,4 +32,23 @@
       
       
 }
+
+.up-down-moving-img {
+
+    position: relative;
+    animation: jump 1s infinite linear;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
 
