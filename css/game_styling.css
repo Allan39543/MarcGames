@@ -85,9 +85,9 @@
 }
 
 .create-game-link{
-
-    position: absolute;
-    
+        position: absolute;
+        top: 48%;
+        left: 46%;
 }
 .create-game-link a{
 
@@ -118,18 +118,14 @@
         object-fit: cover;
     }
     .up-down-moving-img {
-
-
         width: 150px;
         position: absolute;
         top: 35%;
         left: 35%;
-        
-        
+         
     }
 
     .home-page-title{
-    
     
         width: 100%;
 
@@ -137,8 +133,7 @@
     
     .home-page-title h1{
     
-        margin-left: 20%;
-       
+        margin-left: 20%; 
 
     }
 
@@ -150,4 +145,10 @@
     }
 
 
+}
+
+@media only screen and (max-width: 414px)  {
+body{
+    display: none;
+}
 }
