@@ -207,4 +207,10 @@ border-radius: 1em;
     .play-game form input[type="submit"]{
         margin-left: 33%;
     }
+
+    .play-game h3{
+
+        font-size: 1em;
+        padding: 4px;
+    }
 }
