@@ -10,5 +10,18 @@ id INT NOT NULL AUTO_INCREMENT,
     PRIMARY KEY(id)
 )
 
+CREATE TABLE games(
+id INT NOT NULL AUTO_INCREMENT,
+    team1_id INT ,
+    team2_id INT,
+    league_id INT,
+    status INT,
+    
+    PRIMARY KEY(id),
+    FOREIGN KEY(team2_id) REFERENCES teams(id),
+    FOREIGN KEY(team1_id) REFERENCES leagues(id),
+    FOREIGN KEY(league_id) REFERENCES leagues(id)
+)
+
 
 

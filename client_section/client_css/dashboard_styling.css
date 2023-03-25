@@ -2,6 +2,7 @@
 
     position: relative;
     background: #001220;
+    /* background: #FFF; */
     border-radius: 5px;
     height: 70vh;
     width: 65%;
@@ -77,6 +78,23 @@ align-items: center;
 #result{
 
     color: #FFFDD0;
+}
+
+.tables{
+    display: flex;
+    justify-content: space-evenly;
+}
+.game-tables{
+    width: 40%;
+    margin-top: 2%;
+    border: 2px solid #FFFDD0;
+    color: #FFFDD0;
+    align-items: center;
+}
+.game-tables thead{
+
+    background: green;
+    height: 30px;
 }
 
 /* Resposive Styling */

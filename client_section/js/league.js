@@ -1,18 +1,20 @@
-document.querySelector('#create-team').addEventListener('submit', function (e) {
+//process league
+
+document.querySelector('#create-league').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the form from submitting normally
 
     // Get the name and age values from the form
-    const teamName = document.querySelector('#teamName').value;
+    const league = document.querySelector('#league').value;
 
-    console.log(teamName);
+    console.log(league);
     // Create a new FormData object to send the data to the PHP endpoint
     const formData = new FormData();
-    formData.append('teamName', teamName);
+    formData.append('league', league);
 
 
 
     //  Send an AJAX request to the PHP endpoint
-    fetch('http://localhost/MarcGames/api/classes/create_team.contr.php', {
+    fetch('http://localhost/MarcGames/api/classes/create_league.contr.php', {
         method: 'POST',
         body: formData
     })
@@ -24,4 +26,3 @@ document.querySelector('#create-team').addEventListener('submit', function (e) {
         })
         .catch(error => console.error(error));
 });
-

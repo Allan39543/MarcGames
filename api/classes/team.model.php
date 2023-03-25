@@ -11,4 +11,16 @@ class Team extends Dbh{
     
         $stmt->execute([$teamName]);
     }
+
+    protected function getTeams(){
+
+        $sql="SELECT * FROM teams ";
+        $stmt=$this->connect()->prepare($sql);
+    
+        $stmt->execute();
+
+        $results=$stmt->fetchAll();
+
+        return $results;
+    }
 }

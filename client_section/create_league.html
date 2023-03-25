@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/game_styling.css" rel="stylesheet" />
-    <link href="dashboard_styling.css" rel="stylesheet" />
+    <link href="client_css/dashboard_styling.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
 
     <title>Dashboard</title>
@@ -34,7 +34,7 @@
                     </div>
                     </a>
 
-                    <a href="#">
+                    <a href="create_game.html">
                     <div class="links">
                     <div class="icon"><i class="fas fa-gamepad"></i>
                     </div>
@@ -50,7 +50,7 @@
     <form id="create-league" method="POST">
 
         <label>Create League</label>
-        <input type="text" id="league" name="league"/>
+        <input type="text" id="league" name="league" required/>
         <input type="submit" value="Submit">
     </form>
 </div>
@@ -61,7 +61,7 @@
 
         </div>
    
-        <script src="js/games.js">
+        <script src="js/league.js">
 
         </script>
 </body>
