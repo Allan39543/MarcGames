@@ -300,4 +300,14 @@ border-radius: 1em;
 
         width: 95%;
     }
+
+    .game-objects .score-board .score{
+
+        font-size: .8em;
+    }
+
+    .game-objects .score-board{
+        right: 5%;
+        top: 50%;
+    }
 }
