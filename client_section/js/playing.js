@@ -1,6 +1,9 @@
 // create game
-let teamOneId,teamTwoId,leagueId,gameId,teamTwoScore
+let teamOneId,teamTwoId,leagueId,gameId
 let teamOneScore=0
+let teamTwoScore=0
+let count=0;
+let randomNumber=Math.floor(Math.random() * 6 )
 
 document.querySelector('#play-game').addEventListener('submit', function (e) {
     e.preventDefault(); 
@@ -30,9 +33,20 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
     playBtn.addEventListener('click', function() {
         // Move the player object towards the soccer object
         jumpAndHit();
-        if(teamOneScore<5){
-            teamOneScore+=1
+        if(count<5){
+            teamOneScore+=randomNumber
+            document.querySelector('.score').textContent=teamOneScore
+            document.querySelector('.player-name').textContent="Team One"
+            count+=1
             console.log(teamOneScore)
+        }
+
+        else if(count>=5 && count <10){
+            teamTwoScore+=randomNumber
+            document.querySelector('.score').textContent=teamTwoScore
+            document.querySelector('.player-name').textContent="Team Two"
+            count+=1  
+            console.log(count) 
         }
     });
 

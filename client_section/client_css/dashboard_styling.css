@@ -183,6 +183,7 @@ border-radius: 1em;
   }
 
   .game-objects{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,6 +193,22 @@ border-radius: 1em;
     background: #001220;
   }
 
+  .game-objects .score-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    font-weight: bolder;
+    font-size: larger;
+    right: 20%;
+    top: 45%;
+    color: #FFFDD0;
+  }
+
+  .game-objects .score-board .score{
+
+    font-size: 2em;
+  }
 
   .game-objects .soccer-object img{
     height: 150px;
@@ -202,6 +219,7 @@ border-radius: 1em;
   .game-objects .play-btn button{
     width: 50px;
     height: 50px;
+    cursor: pointer;
     border-radius:50%;
     border: 4px solid green
   }
