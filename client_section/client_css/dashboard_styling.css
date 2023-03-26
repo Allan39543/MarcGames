@@ -299,6 +299,7 @@ border-radius: 1em;
     .game-objects{
 
         width: 95%;
+        margin-top: 20%;
     }
 
     .game-objects .score-board .score{
