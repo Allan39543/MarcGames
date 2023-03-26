@@ -8,7 +8,7 @@
     width: 65%;
     margin: auto;
     margin-top: 10%;
-    
+ 
 }
 
 
@@ -95,6 +95,7 @@ border-radius: 1em;
     border: 2px solid #FFFDD0;
     color: #FFFDD0;
     align-items: center;
+    
 }
 .game-tables thead{
 
@@ -109,6 +110,8 @@ border-radius: 1em;
     align-items: center;
     color: #FFFDD0;
     margin-top: 2%;
+    
+    
    
 }
 
@@ -141,6 +144,11 @@ border-radius: 1em;
     font-size: large;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.scroll{
+    overflow-y: auto;
+    height: 47vh;
 }
 
 /* Resposive Styling */
