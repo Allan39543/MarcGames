@@ -23,5 +23,18 @@ id INT NOT NULL AUTO_INCREMENT,
     FOREIGN KEY(league_id) REFERENCES leagues(id)
 )
 
+CREATE TABLE scores(
+id INT NOT NULL AUTO_INCREMENT,
+    game_id INT,
+    scope VARCHAR(10),
+    teamOneScore INT,
+    teamTwoScore INT,
+    
+    PRIMARY KEY(id),
+    
+    FOREIGN KEY(game_id) REFERENCES games(id)
+    
+)
+
 
 

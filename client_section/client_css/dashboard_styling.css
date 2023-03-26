@@ -239,6 +239,11 @@ border-radius: 1em;
     .game-activities .game-nav{
 
         width: 95%;
+       
+    }
+
+    .game-activities .game-nav a{
+        font-size: .8em;
     }
 
     .create-team form{
