@@ -11,6 +11,12 @@
 
 }
 
+.container .close-game{
+    color: #FFF;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
 
 .game-activities .game-nav {
 
@@ -184,11 +190,16 @@
 .game-play {
 
     display: none;
+    margin-top: 5%;
 }
 
 .game-play h1 {
 
-    color: red;
+    color: #FFF;
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
+    right: 5%;
 }
 
 .game-objects {
@@ -329,5 +340,15 @@
     .game-objects .score-board {
         right: 5%;
         top: 50%;
+    }
+
+    .container .close-game{
+        color: #FFF;
+        position: absolute;
+        right: 5%;
+        top: -10%;
+        background: #001220;
+        padding: 5px;
+        border-radius: 5px;
     }
 }
