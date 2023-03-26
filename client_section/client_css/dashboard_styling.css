@@ -295,4 +295,9 @@ border-radius: 1em;
         font-size: 1em;
         padding: 4px;
     }
+
+    .game-objects{
+
+        width: 95%;
+    }
 }
