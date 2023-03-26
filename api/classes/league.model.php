@@ -2,24 +2,27 @@
 
 include 'Dbh.class.php';
 
-class League extends Dbh{
+class League extends Dbh
+{
 
-    protected function setLeague($leagueName){
+    protected function setLeague($leagueName)
+    {
 
-        $sql="INSERT INTO leagues(name) VALUES(?)";
-        $stmt=$this->connect()->prepare($sql);
-    
+        $sql = "INSERT INTO leagues(name) VALUES(?)";
+        $stmt = $this->connect()->prepare($sql);
+
         $stmt->execute([$leagueName]);
     }
 
-    protected function getLeagues(){
+    protected function getLeagues()
+    {
 
-        $sql="SELECT * FROM leagues";
-        $stmt=$this->connect()->prepare($sql);
-    
+        $sql = "SELECT * FROM leagues";
+        $stmt = $this->connect()->prepare($sql);
+
         $stmt->execute();
 
-        $results=$stmt->fetchAll();
+        $results = $stmt->fetchAll();
 
         return $results;
     }

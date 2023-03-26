@@ -1,28 +1,26 @@
 
-   // Fetch the data from the PHP endpoint
-   fetch('http://localhost/MarcGames/api/classes/game.view.php')
-   .then(response => response.json())
-   .then(data => {
-       // Get a reference to the table body
-       const tableBody = document.querySelector('#gamesTable tbody');
+// Fetch the data from the PHP endpoint
+fetch('http://localhost/MarcGames/api/classes/game.view.php')
+    .then(response => response.json())
+    .then(data => {
 
-       // Loop through the data and create a table row for each item
-       data.forEach(item => {
-           const row = tableBody.insertRow();
+        const tableBody = document.querySelector('#gamesTable tbody');
 
-           // Create a cell for the name property of the item
-           const idCell = row.insertCell();
-           idCell.textContent = item.id;
+        data.forEach(item => {
+            const row = tableBody.insertRow();
 
-           const teamOne = row.insertCell();
-           teamOne.textContent = item.team1_id;
+            // cells for the name property of the item
+            const idCell = row.insertCell();
+            idCell.textContent = item.id;
 
-           const teamTwo = row.insertCell();
-           teamTwo.textContent = item.team2_id;
+            const teamOne = row.insertCell();
+            teamOne.textContent = item.team1_id;
 
-           const leagueId = row.insertCell();
-           leagueId.textContent = item.league_id;
-       });
-   })
-   .catch(error => console.error(error));
-  
+            const teamTwo = row.insertCell();
+            teamTwo.textContent = item.team2_id;
+
+            const leagueId = row.insertCell();
+            leagueId.textContent = item.league_id;
+        });
+    })
+    .catch(error => console.error(error));

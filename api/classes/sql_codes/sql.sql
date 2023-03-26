@@ -19,9 +19,11 @@ id INT NOT NULL AUTO_INCREMENT,
     
     PRIMARY KEY(id),
     FOREIGN KEY(team2_id) REFERENCES teams(id),
-    FOREIGN KEY(team1_id) REFERENCES leagues(id),
+    FOREIGN KEY(team1_id) REFERENCES teams(id),
     FOREIGN KEY(league_id) REFERENCES leagues(id)
 )
+
+ALTER TABLE games ADD COLUMN time_date VARCHAR(200)
 
 CREATE TABLE scores(
 id INT NOT NULL AUTO_INCREMENT,

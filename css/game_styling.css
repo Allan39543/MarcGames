@@ -1,3 +1,4 @@
+/* Styles the index page and part of client */
 * {
 
     margin: 0;
@@ -6,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url('../images/bgp.jpg');
     height: 100vh;
     width: 100%;
@@ -25,9 +26,9 @@ body{
     width: 100%;
 }
 
-.main .animated-images-wrapper .spinning-image{
+.main .animated-images-wrapper .spinning-image {
     width: 70%;
-   
+
 }
 
 .up-down-moving-img {
@@ -83,12 +84,13 @@ body{
     }
 }
 
-.create-game-link{
-        position: absolute;
-        top: 48%;
-        left: 46%;
+.create-game-link {
+    position: absolute;
+    top: 48%;
+    left: 46%;
 }
-.create-game-link a{
+
+.create-game-link a {
 
     background: #FBAE3C;
     padding: .8em;
@@ -100,43 +102,46 @@ body{
 
 /* Responsive Design */
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
 
-   
+
     .main .animated-images-wrapper {
         display: block;
     }
-    .main .spinning-image{
+
+    .main .spinning-image {
         width: 50%;
-        
+
     }
+
     .main .spinning-image img {
 
         width: 200px;
         height: 200px;
         object-fit: cover;
     }
+
     .up-down-moving-img {
         width: 150px;
         position: absolute;
         top: 35%;
         left: 35%;
-         
+
     }
 
-    .home-page-title{
-    
+    .home-page-title {
+
         width: 100%;
 
     }
-    
-    .home-page-title h1{
-    
-        margin-left: 20%; 
+
+    .home-page-title h1 {
+
+        margin-left: 20%;
 
     }
 
-    .create-game-link{
+    .create-game-link {
 
         position: absolute;
         top: 70%;
@@ -145,5 +150,3 @@ body{
 
 
 }
-
-

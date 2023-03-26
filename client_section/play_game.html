@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/game_styling.css" rel="stylesheet" />
     <link href="client_css/dashboard_styling.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" />
     <title>Dashboard</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="game-activities">
             <div class="game-nav">
@@ -19,112 +22,110 @@
                         <div class="icon"><i class="fas fa-users"></i>
                         </div>
                         <div class="label">Create Team</div>
-                        </div>
+                    </div>
                 </a>
 
                 <a href="create_league.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-futbol"></i>
+                        <div class="icon"><i class="fas fa-futbol"></i>
+
+                        </div>
+                        <div class="label">Create League</div>
 
                     </div>
-                    <div class="label">Create League</div>
+                </a>
 
-                    </div>
-                    </a>
-
-                    <a href="create_game.html">
+                <a href="create_game.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-gamepad"></i>
+                        <div class="icon"><i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="label">Create Game</div>
                     </div>
-                    <div class="label">Create Game</div>
-                </div>
                 </a>
 
                 <a href="play_game.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-gamepad"></i>
+                        <div class="icon"><i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="label"> Play</div>
                     </div>
-                    <div class="label"> Play</div>
-                </div>
                 </a>
 
-                </div>
-                
             </div>
-<div class="scroll">
-<div class="create-game">
-<div class="tables">
 
-    <table id="gamesTable" class="game-tables">
-        <thead>
-            <tr>
-        <th>Game Id</th>
-        <th>Team1Id</th>
-        <th>Team2Id</th>
-        <th>leagueId</th>
-    </tr>
-        </thead>
-        <tbody >
-        </tbody>
-    </table>
-</div>
+        </div>
+        <div class="scroll">
+            <div class="create-game">
+                <div class="tables">
 
-</div>
+                    <table id="gamesTable" class="game-tables">
+                        <thead>
+                            <tr>
+                                <th>Game Id</th>
+                                <th>Team1Id</th>
+                                <th>Team2Id</th>
+                                <th>leagueId</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
 
-<div class="play-game">
+            </div>
 
-    <h3>Enter Game Id To Play Game</h3>
+            <div class="play-game">
 
-    <form id="play-game" method="POST">
-        <input type="text" id="gameId"  name="GameId" placeholder="Game Id" required>
-        <!-- <input type="text" id="team1Id"  name="team1Id" placeholder="Team Id" required>
-        <input type="text" id="team2Id" name="team2Id" placeholder="Team Id"  required>
-        <input type="text" id="leagueId" name="leagueId" placeholder="League Id"  required> -->
-        <input type="submit" value="Play">
-        </form>
-    
-</div>
-</div>
-<div id="result">
+                <h3>Enter Game Id To Play Game</h3>
 
-</div>
+                <form id="play-game" method="POST">
+                    <input type="text" id="gameId" name="GameId" placeholder="Game Id" required>
+                    <input type="submit" value="Play">
+                </form>
+
+            </div>
+        </div>
+        <div id="result">
 
         </div>
 
-        <div class="game-play">
-            <h1 class="close-game">X</h1>
+    </div>
 
-            <div class="game-objects">
-                <div class="soccer-object" id="soccer-object">
-                    <img src="../images/spinning.png" alt="soccer object"/>
+    <div class="game-play">
+        <h1 class="close-game">X</h1>
+
+        <div class="game-objects">
+            <div class="soccer-object" id="soccer-object">
+                <img src="../images/spinning.png" alt="soccer object" />
+            </div>
+            <div class="player" id="player">
+                <img src="../images/headerPlayer.png" alt="soccer object" />
+            </div>
+            <div class="play-btn">
+                <button id="play-btn">Play</button>
+            </div>
+
+            <div class="score-board">
+                <div class="player-name">Player Name</div>
+
+                <div class="score">0</div>
+
+                <div id="game-result">
+
                 </div>
-                <div class="player" id="player">
-                    <img src="../images/headerPlayer.png" alt="soccer object"/>
-                </div>
-                <div class="play-btn">
-                    <button id="play-btn">Play</button>
-                </div>
-
-                <div class="score-board">
-                    <div class="player-name">Player Name</div>
-
-                    <div class="score">0</div>
-
-                    <div id="game-result">
-
-                    </div>
-                    
-                </div>
-
 
             </div>
-            
+
 
         </div>
-   
-        <script src="js/getGames.js"></script>
-        <script src="js/playing.js"></script>
-        
+
+
+    </div>
+
+    <script src="js/getGames.js"></script>
+    <script src="js/playing.js"></script>
+
 
 </body>
+
 </html>

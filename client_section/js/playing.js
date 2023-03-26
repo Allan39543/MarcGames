@@ -9,10 +9,6 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
     e.preventDefault(); 
 
     gameId = document.querySelector('#gameId').value;
-    // teamOneId = document.querySelector('#team1Id').value;
-    // teamTwoId = document.querySelector('#team2Id').value;
-    // leagueId = document.querySelector('#leagueId').value;
-
     document.querySelector('.container').style.display='none'
     document.querySelector('.game-play').style.display='block'
 
@@ -22,17 +18,18 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
 
     function jumpAndHit() {
         playerObj.style.transition = 'transform 0.5s ease-in-out';
-        playerObj.style.transform = 'translateY(-100px)'; // Move player up
+        playerObj.style.transform = 'translateY(-100px)'; 
         setTimeout(function() {
             playerObj.style.transition = 'transform 0.5s ease-in-out';
-            playerObj.style.transform = 'translateY(0)'; // Move player back down
-        }, 500); // Wait 0.5s before moving player back down
+            playerObj.style.transform = 'translateY(0)'; 
+        }, 500); 
     }
     
 
     playBtn.addEventListener('click', function() {
-        // Move the player object towards the soccer object
+       
         jumpAndHit();
+
         if(count<5){
             teamOneScore+=randomNumber
             document.querySelector('.score').textContent=teamOneScore
@@ -55,8 +52,6 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
         formData.append('teamOneScore', teamOneScore);
         formData.append('teamTwoScore', teamTwoScore);
     
-    
-    
         // Send an AJAX request to the PHP endpoint
         fetch('http://localhost/MarcGames/api/classes/scores_game.contr.php', {
             method: 'POST',
@@ -64,12 +59,11 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
         })
             .then(response => response.text())
             .then(data => {
-                // Display the result on the page
                 document.querySelector('#game-result').innerHTML = data;
                 console.log(data)
             })
             .catch(error => console.error(error));
-            
+
 
             fetch('http://localhost/MarcGames/api/classes/scores.view.php')
             .then(response => response.json())
@@ -80,13 +74,8 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
             .catch(error => console.error(error));
 
         }
-
-        
+   
     });
-
-
-
-
 
     document.querySelector('.close-game').addEventListener('click',function(){
         document.querySelector('.game-play').style.display='none'
@@ -94,11 +83,5 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
         console.log(gameId,teamOneId,teamTwoId,leagueId)
 
     })
-
-    // console.log(gameId,teamOneId,teamTwoId,leagueId)
-
-    
-    // Create a new FormData object to send the data to the PHP endpoint
-
 
 })

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/game_styling.css" rel="stylesheet" />
     <link href="client_css/dashboard_styling.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" />
 
     <title>Dashboard</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="game-activities">
             <div class="game-nav">
@@ -21,56 +24,57 @@
                         <div class="icon"><i class="fas fa-users"></i>
                         </div>
                         <div class="label">Create Team</div>
-                        </div>
+                    </div>
                 </a>
 
                 <a href="create_league.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-futbol"></i>
+                        <div class="icon"><i class="fas fa-futbol"></i>
+
+                        </div>
+                        <div class="label">Create League</div>
 
                     </div>
-                    <div class="label">Create League</div>
+                </a>
 
-                    </div>
-                    </a>
-
-                    <a href="create_game.html">
+                <a href="create_game.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-gamepad"></i>
+                        <div class="icon"><i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="label">Create Game</div>
                     </div>
-                    <div class="label">Create Game</div>
-                </div>
                 </a>
 
                 <a href="play_game.html">
                     <div class="links">
-                    <div class="icon"><i class="fas fa-gamepad"></i>
+                        <div class="icon"><i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="label"> Play</div>
                     </div>
-                    <div class="label"> Play</div>
-                </div>
                 </a>
 
-                </div>
-                
             </div>
 
-<div class="create-team">
-    <form id="create-league" method="POST">
+        </div>
 
-        <label>Create League</label>
-        <input type="text" id="league" name="league" required/>
-        <input type="submit" value="Submit">
-    </form>
-</div>
+        <div class="create-team">
+            <form id="create-league" method="POST">
 
-<div id="result">
+                <label>Create League</label>
+                <input type="text" id="league" name="league" required />
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-</div>
+        <div id="result">
 
         </div>
-   
-        <script src="js/league.js">
 
-        </script>
+    </div>
+
+    <script src="js/league.js">
+
+    </script>
 </body>
+
 </html>

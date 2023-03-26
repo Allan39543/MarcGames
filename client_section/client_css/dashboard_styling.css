@@ -1,61 +1,63 @@
+/* client section styling */
 .container {
 
     position: relative;
     background: #001220;
-    /* background: #FFF; */
     border-radius: 5px;
     height: 70vh;
     width: 65%;
     margin: auto;
     margin-top: 10%;
- 
+
 }
 
 
-.game-activities .game-nav{
+.game-activities .game-nav {
 
     width: 50%;
     height: 80px;
     margin: auto;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 }
 
-.game-nav{
+.game-nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.game-nav a{
+.game-nav a {
     color: #FFFDD0;
     text-decoration: none;
 }
 
-.game-nav .links{
+.game-nav .links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.create-team{
+
+.create-team {
     display: flex;
     justify-content: center;
     height: 300px;
 }
-.create-team form{
-display: flex;
-flex-direction: column;
-width: 50%;
-height: 220px;
-margin: auto;
-align-items: center;
-border: 1px solid #FFFDD0;
-padding: 5px;
-border-radius: 1em;
+
+.create-team form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 220px;
+    margin: auto;
+    align-items: center;
+    border: 1px solid #FFFDD0;
+    padding: 5px;
+    border-radius: 1em;
 }
 
-.create-team label{
+.create-team label {
     font-size: large;
     color: #FFFDD0;
     margin-top: 3%;
@@ -63,7 +65,7 @@ border-radius: 1em;
 
 }
 
-.create-team form input[type="text"]{
+.create-team form input[type="text"] {
 
     height: 50px;
     width: 40%;
@@ -72,7 +74,7 @@ border-radius: 1em;
     border-radius: 5px;
 }
 
-.create-team form input[type="submit"]{
+.create-team form input[type="submit"] {
     height: 50px;
     width: 35%;
     font-size: large;
@@ -80,47 +82,49 @@ border-radius: 1em;
     border-radius: 5px;
 }
 
-#result{
+#result {
 
     color: #FFFDD0;
 }
 
-.tables{
+.tables {
     display: flex;
     justify-content: space-evenly;
 }
-.game-tables{
+
+.game-tables {
     width: 40%;
     margin-top: 2%;
     border: 2px solid #FFFDD0;
     color: #FFFDD0;
     align-items: center;
-    
+
 }
-.game-tables thead{
+
+.game-tables thead {
 
     background: green;
     height: 30px;
 }
 
-.play-game{
+.play-game {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FFFDD0;
     margin-top: 2%;
-    
-    
-   
+
+
+
 }
 
-.play-game h3{
+.play-game h3 {
 
     margin-bottom: 1%;
 }
 
-.play-game form{
+.play-game form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -129,7 +133,7 @@ border-radius: 1em;
     width: 50%;
 }
 
-.play-game form input[type="text"]{
+.play-game form input[type="text"] {
 
     height: 60px;
     width: 40%;
@@ -138,7 +142,7 @@ border-radius: 1em;
     border-radius: 5px;
 }
 
-.play-game form input[type="submit"]{
+.play-game form input[type="submit"] {
     height: 60px;
     width: 35%;
     font-size: large;
@@ -146,43 +150,48 @@ border-radius: 1em;
     border-radius: 5px;
 }
 
-.scroll{
+.scroll {
     overflow-y: auto;
     height: 47vh;
 }
 
 /* Style the scrollbar */
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the scrollbar track */
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar handle */
-    border-radius: 5px; /* Rounded corners on the scrollbar handle */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar handle on hover */
-  }
-  
-  .game-play{
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar handle */
+    border-radius: 5px;
+    /* Rounded corners on the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar handle on hover */
+}
+
+.game-play {
 
     display: none;
-  }
+}
 
-  .game-play h1{
+.game-play h1 {
 
-    color:red;
-  }
+    color: red;
+}
 
-  .game-objects{
+.game-objects {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -191,9 +200,9 @@ border-radius: 1em;
     padding: 2em;
     margin: auto;
     background: #001220;
-  }
+}
 
-  .game-objects .score-board{
+.game-objects .score-board {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,35 +212,35 @@ border-radius: 1em;
     right: 20%;
     top: 45%;
     color: #FFFDD0;
-  }
+}
 
-  .game-objects .score-board .score{
+.game-objects .score-board .score {
 
     font-size: 2em;
-  }
+}
 
-  .game-objects .soccer-object img{
+.game-objects .soccer-object img {
     height: 150px;
     width: 150px;
     object-fit: cover;
-  }
+}
 
-  .game-objects .play-btn button{
+.game-objects .play-btn button {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius:50%;
+    border-radius: 50%;
     border: 4px solid green
-  }
+}
 
-  .game-result{
+.game-result {
     color: #FFFDD0;
-  }
+}
 
 
 /* Resposive Styling */
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
 
     .container {
 
@@ -240,55 +249,55 @@ border-radius: 1em;
         height: 60vh;
     }
 
-    .game-activities .game-nav{
+    .game-activities .game-nav {
 
         width: 95%;
-       
+
     }
 
-    .game-activities .game-nav a{
+    .game-activities .game-nav a {
         font-size: .8em;
     }
 
-    .create-team form{
+    .create-team form {
 
         width: 90%;
     }
 
-    .create-team form input[type="text"]{
+    .create-team form input[type="text"] {
 
         width: 70%;
         margin-bottom: 10%;
         margin-top: 7%;
     }
 
-    .create-team form input[type="submit"]{
+    .create-team form input[type="submit"] {
 
         width: 60%;
     }
 
-    .tables{
+    .tables {
         display: flex;
         flex-direction: column;
     }
 
-    .game-tables{
+    .game-tables {
 
         width: 80%;
         margin: auto;
         margin-top: 4%;
     }
 
-    .play-game form{
+    .play-game form {
 
         display: inline-block;
         width: 95%;
         margin: auto;
         height: auto;
-       
+
     }
 
-    .play-game form input[type="text"]{
+    .play-game form input[type="text"] {
 
         height: 40px;
         width: 90%;
@@ -296,28 +305,28 @@ border-radius: 1em;
         margin-left: 4%;
     }
 
-    .play-game form input[type="submit"]{
+    .play-game form input[type="submit"] {
         margin-left: 33%;
     }
 
-    .play-game h3{
+    .play-game h3 {
 
         font-size: 1em;
         padding: 4px;
     }
 
-    .game-objects{
+    .game-objects {
 
         width: 95%;
         margin-top: 20%;
     }
 
-    .game-objects .score-board .score{
+    .game-objects .score-board .score {
 
         font-size: .8em;
     }
 
-    .game-objects .score-board{
+    .game-objects .score-board {
         right: 5%;
         top: 50%;
     }

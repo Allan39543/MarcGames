@@ -1,13 +1,14 @@
 <?php
 include 'scores_game.model.php';
 
-class ScoresView extends Scores {
+class ScoresView extends Scores
+{
 
-    public function showScores() {
-        // Get the data from the model
+    public function showScores()
+    {
+
         $results = $this->getScores();
-        
-        // Create a new array with the desired structure
+
         $games = array();
         foreach ($results as $result) {
             $game = array();
@@ -23,15 +24,12 @@ class ScoresView extends Scores {
             $games[] = $game;
         }
 
-        // Return the data as a JSON response
         $data = array('games' => $games);
         header('Content-Type: application/json');
         echo json_encode($data);
     }
 }
 
-// Create a new instance of the ScoresView class
 $scoresView = new ScoresView();
 
-// Call the showScores() method to return the data as a JSON response
 $scoresView->showScores();
