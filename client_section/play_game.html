@@ -7,7 +7,6 @@
     <link href="../css/game_styling.css" rel="stylesheet" />
     <link href="client_css/dashboard_styling.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-
     <title>Dashboard</title>
 </head>
 <body>
@@ -15,7 +14,6 @@
     <div class="container">
         <div class="game-activities">
             <div class="game-nav">
-
                 <a href="dashboard.html">
                     <div class="links">
                         <div class="icon"><i class="fas fa-users"></i>
@@ -53,24 +51,51 @@
                 </div>
                 
             </div>
+<div class="scroll">
+<div class="create-game">
+<div class="tables">
 
-<div class="create-team">
-    <form id="create-team" method="POST">
-
-        <label>Create Team</label>
-        <input type="text" id="teamName" name="teamName" required/>
-        <input type="submit" value="Submit">
-    </form>
+    <table id="gamesTable" class="game-tables">
+        <thead>
+            <tr>
+        <th>Game Id</th>
+        <th>Team1Id</th>
+        <th>Team2Id</th>
+        <th>leagueId</th>
+    </tr>
+        </thead>
+        <tbody >
+        </tbody>
+    </table>
 </div>
 
+</div>
+
+<div class="play-game">
+
+    <h3>Enter teams and league Id To Create Game</h3>
+
+    <form id="create-game" method="POST">
+        <input type="text" id="GameId"  name="GameId" placeholder="Game Id" required>
+        <input type="text" id="team1Id"  name="team1Id" placeholder="Team Id" required>
+        <input type="text" id="team2Id" name="team2Id" placeholder="Team Id"  required>
+        <input type="text" id="leagueId" name="leagueId" placeholder="League Id"  required>
+        <input type="submit" value="Play">
+        </form>
+    
+</div>
+</div>
 <div id="result">
 
 </div>
 
         </div>
-   
-        <script src="js/games.js">
 
-        </script>
+        <div class="game-play">
+            <h1>Game On</h1>
+        </div>
+   
+        <script src="js/getGames.js"></script>
+
 </body>
 </html>

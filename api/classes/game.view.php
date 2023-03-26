@@ -1,12 +1,13 @@
 <?php
 
-include 'league.model.php';
 
-class LeagueView extends League {
+include 'game.model.php';
 
-    public function showLeagues() {
+class gameView extends Games {
+
+    public function showGames() {
         // Get the data from the model
-        $results = $this->getLeagues();
+        $results = $this->getGames();
 
         // Return the data as a JSON response
         header('Content-Type: application/json');
@@ -15,7 +16,7 @@ class LeagueView extends League {
 }
 
 // Create a new instance of the TeamView class
-$leagueView = new LeagueView;
+$gameView = new gameView;
 
 // Call the showTeams() method to return the data as a JSON response
-$leagueView->showLeagues();
+$gameView->showGames();

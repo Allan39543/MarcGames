@@ -1,4 +1,4 @@
-// game playing
+// create game
 
 document.querySelector('#create-game').addEventListener('submit', function (e) {
     e.preventDefault(); 
