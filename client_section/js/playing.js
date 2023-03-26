@@ -69,7 +69,19 @@ document.querySelector('#play-game').addEventListener('submit', function (e) {
                 console.log(data)
             })
             .catch(error => console.error(error));
+            
+
+            fetch('http://localhost/MarcGames/api/classes/scores.view.php')
+            .then(response => response.json())
+            .then(data => {
+         
+             console.log(data);
+            })
+            .catch(error => console.error(error));
+
         }
+
+        
     });
 
 

@@ -10,9 +10,9 @@ class FormProcessor extends Scores{
             $teamOneScore = $_POST['teamOneScore'];
             $teamTwoScore = $_POST['teamTwoScore'];
         }
-  
+        $date = date('Y-m-d H:i:s');
         // Do something with the name and age values
-        $result = "Game Id : $gameId Team1 Score : $teamOneScore Team2 Score :  $teamTwoScore ";
+        $result = "Game Id : $gameId Team1 Score : $teamOneScore Team2 Score :  $teamTwoScore : $date";
   
         $this->setScore($gameId,$teamOneScore,$teamTwoScore);
         // Return the result as a response
