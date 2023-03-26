@@ -75,8 +75,8 @@
 
     <h3>Enter teams and league Id To Create Game</h3>
 
-    <form id="create-game" method="POST">
-        <input type="text" id="GameId"  name="GameId" placeholder="Game Id" required>
+    <form id="play-game" method="POST">
+        <input type="text" id="gameId"  name="GameId" placeholder="Game Id" required>
         <input type="text" id="team1Id"  name="team1Id" placeholder="Team Id" required>
         <input type="text" id="team2Id" name="team2Id" placeholder="Team Id"  required>
         <input type="text" id="leagueId" name="leagueId" placeholder="League Id"  required>
@@ -92,10 +92,25 @@
         </div>
 
         <div class="game-play">
-            <h1>Game On</h1>
+            <h1 class="close-game">X</h1>
+
+            <div class="game-objects">
+                <div class="soccer-object" id="soccer-object">
+                    <img src="../images/spinning.png" alt="soccer object"/>
+                </div>
+                <div class="player" id="player">
+                    <img src="../images/headerPlayer.png" alt="soccer object"/>
+                </div>
+                <div class="play-btn">
+                    <button id="play-btn">Play</button>
+                </div>
+            </div>
+            
         </div>
    
         <script src="js/getGames.js"></script>
+        <script src="js/playing.js"></script>
+        
 
 </body>
 </html>
